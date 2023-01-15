@@ -1,0 +1,24 @@
+.navbar{
+   width: 100%;
+   justify-content: space-between;
+
+}
+
+ .navbar-nav li a{
+     color: white;
+     padding: 0 50px;
+ }
+ .active a{
+     font-weight: bold;     
+ }
+ .nav-item a{
+     font-size: 20px;
+ 
+ } 
+ .logo a{
+     font-size: 50px;
+     font-weight: bold;
+ }
+ .btn{
+     margin: 5px;
+ }

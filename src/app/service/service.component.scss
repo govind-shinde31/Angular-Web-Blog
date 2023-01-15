@@ -1,0 +1,48 @@
+
+.bgs{
+    background: #efefef;
+}
+
+.title-text p{
+    position: relative;
+    display: inline-block;
+   }
+   .title-text p::after{
+       content: '';
+       background: linear-gradient(#019587, #fff);
+       position: absolute;
+       top: -25px;
+       left: 0;
+       z-index: -1;
+       transform: rotate(10deg);
+       border-top-left-radius: 35px;
+       border-bottom-right-radius: 35px;
+   }
+   .service-box{
+    width: 80%;
+    margin: auto;
+   }
+   .single-service{
+       flex-basis: 48%;
+       text-align: center;
+       margin-bottom: 20px;
+       position: relative;
+       color: #fff;
+   }
+   .single-service img{
+    width: 100%;
+   }
+
+.overla{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5)#009688);
+    opacity: 0;
+    cursor: pointer;
+
+}
+.single-service:hover .overlay{
+    opacity: 1;
+}
