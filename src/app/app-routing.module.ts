@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FeatureComponent } from './feature/feature.component';
-import { HomeComponent } from './home/home.component';
-import { MeetComponent } from './meet/meet.component';
-import { ServiceComponent } from './service/service.component';
-import { TestimonialComponent } from './testimonial/testimonial.component';
+import { FeatureComponent } from './web-blog/components/feature/feature.component';
+import { HomeComponent } from './web-blog/components/home/home.component';
+import { MeetComponent } from './web-blog/components/meet/meet.component';
+import { ServiceComponent } from './web-blog/components/service/service.component';
+import { TestimonialComponent } from './web-blog/components/testimonial/testimonial.component';
 
 const routes: Routes = [
   {

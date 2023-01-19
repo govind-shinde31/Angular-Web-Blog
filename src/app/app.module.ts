@@ -4,12 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeComponent } from './home/home.component';
-import { FeatureComponent } from './feature/feature.component';
-import { ServiceComponent } from './service/service.component';
-import { TestimonialComponent } from './testimonial/testimonial.component';
-import { MeetComponent } from './meet/meet.component';
-import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './web-blog/components/home/home.component';
+import { FeatureComponent } from './web-blog/components/feature/feature.component';
+import { ServiceComponent } from './web-blog/components/service/service.component';
+import { TestimonialComponent } from './web-blog/components/testimonial/testimonial.component';
+import { MeetComponent } from './web-blog/components/meet/meet.component';
+import { LoginComponent } from './web-blog/components/login/login.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
