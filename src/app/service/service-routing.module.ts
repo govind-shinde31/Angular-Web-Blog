@@ -1,7 +1,13 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ServiceComponent } from './service.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:'',
+    component: ServiceComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
