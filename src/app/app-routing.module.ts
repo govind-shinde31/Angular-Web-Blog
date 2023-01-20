@@ -27,9 +27,10 @@ const routes: Routes = [
     loadChildren: () => import('./testimonial/testimonial.module').then (m => m.TestimonialModule)
   },
   {
-    path:'login',
-    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
+    path: '**',
+    redirectTo: 'home'
   }
+ 
 ];
 
 @NgModule({

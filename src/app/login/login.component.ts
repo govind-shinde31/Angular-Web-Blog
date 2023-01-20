@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Injectable, OnInit } from '@angular/core';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+Injectable()
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+
+
+  constructor(public activeModal:NgbActiveModal) { }
 
   ngOnInit(): void {
   }
 
   
 }
+
+
