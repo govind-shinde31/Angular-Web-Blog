@@ -27,9 +27,14 @@ const routes: Routes = [
     loadChildren: () => import('./testimonial/testimonial.module').then (m => m.TestimonialModule)
   },
   {
+    path:'video',
+    loadChildren: () =>import('./videos/videos.module').then(m =>m.VideosModule)
+  },
+  {
     path: '**',
     redirectTo: 'home'
-  }
+  },
+ 
  
 ];
 
