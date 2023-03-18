@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="dropdown col-sm">
+        <select name="types" id="drpTypes" [(ngModel)]="selectedType">
+            <option value="all">All</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="educational">Educational</option>
+        </select>
+    </div>
+    <div class="row bg-light">
+        <ng-container *ngFor="let item of playlist">
+
+            <div class="container align-center col-md-4 col-sm-12  my-5"
+                *ngIf="selectedType === 'all' || selectedType === item.type">
+                <div class="main mx-auto ">
+                    <div class="video">
+                        <img src="{{item.thumbnailUrl}}" alt="" class="rounded">
+                    </div>
+                
+                    <div class="title font-bold">{{item.title}}</div>
+                    <div class="description">{{item.description}}</div>
+                </div>
+                <div></div>
+
+            </div>
+        </ng-container>
+    </div>
+</div>
